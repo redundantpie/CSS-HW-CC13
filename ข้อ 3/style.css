@@ -1,0 +1,200 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(60% + 0.8vmin);
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+*, ::after, ::before {
+    box-sizing: border-box;
+} */
+
+
+.logo{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.upper > .item1 > h2 {
+    margin-top: 0%;
+}
+
+.upper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(240, 242, 245);
+}
+
+.item1{
+    /* outline: 2px solid red; */
+    width: 400px;
+    text-align: center;
+}
+
+.item2{
+    width: 400px;
+    margin: 0 auto 10px auto;
+    /* outline: 2px dashed orange; */
+
+}
+
+.white-box{
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+
+input[type=text], input[type=password]{
+    padding: 1.2em;
+    width: 100%;
+    border-radius: 5px;  
+    margin: 0 -17px;
+    border-width: 1px;
+    border-color: rgb(221 223 226);
+    border-style: solid;
+}
+
+
+input[type=text]:focus, input[type=password]:focus{
+    outline-color: lightskyblue ;
+    outline-width: 5px;
+    border: 1px solid blue;
+    box-shadow: 0em 0em .2em lightskyblue;
+}
+
+/* form{
+    display: flex;
+    justify-content: center;
+    
+} */
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button input{
+    width: 100%;
+    height: 2.5em;
+    background-color: #1877f2 ;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 22px;
+}
+
+/* forgetpasswordlink */
+
+form > .forget  , .item2 p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    /* background-color: red; */
+}
+
+
+form > .forget {
+    padding: 0.3em;
+    font-size: 1.3em;
+    color: #1877f2;
+    margin-bottom: 1em;
+
+}
+
+
+
+/* newaccount button */
+
+
+.new-account{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+input[type=button]{
+    width:50%;
+    height: 2.5em;
+    background-color: #42b72a ;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 22px;
+    /* margin-top: 1em;
+    margin-left: 6em; */
+}
+
+/* 
+.submit-button, .new-account{
+    position: relative;
+    margin: 0 auto 1em auto;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: ;
+    outline: 2px solid green;
+    padding: 
+} */
+
+
+
+.item2 p{
+    margin: 1em auto 6em auto;
+}
+
+ a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+a:visited {
+    color: grey
+    
+} 
+
+form > .forget :visited{
+    color: #1877f2
+}
+
+.item3{
+    padding: 1em;
+}
+
+
+@media screen and (min-width: 860px){
+    .upper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        margin-left: -28px;
+    }
+    .item1 {
+        text-align: left;
+        position: relative;
+        top: -2em;
+    }
+
+
+    
+    .item2{
+        margin: 5em 0 0 2em;
+    }
+
+}
